@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #fafafa;
+}
+.btn button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FE5A59;
+    width: 128px;
+    height: 48px;
+    border-radius: 12px;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 550;
+    z-index: 1;
+    cursor: pointer;
+}
+button img{
+    width: 24;
+    margin-right: 12px;
+    margin-left: -5px;
+}
+.btn button:hover{
+    background-color: #fa4639;
+    margin-bottom: 12px;
+    transition: 0.2s all;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    background-color: #fefefe;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 2px 6px 4px rgba(100,100,100,0.15);;
+    margin-top: 350%;
+}
+.card img{
+    width: 80px;
+    padding-bottom: 33px;
+    padding-top: 22px;
+}
+.card .header{
+    position: relative;
+    height: 66px;
+    color: #0c0c0c;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 23px;
+}
+.card .warn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 266px;
+    height: 66px;
+    border-radius: 20px;
+    background: #fbf0ee;
+    background-blend-mode: normal;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    color: #fe5a59;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+}
+.button{
+    padding-top: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+}
+.button .cancel{
+    color: #fe5a59;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    width: 128px;
+    height: 48px;
+    border-radius: 12px;
+    border: 3px solid #fe5a59;
+    background: rgba(254,90,89,0);
+    background-blend-mode: normal;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.button .delete{
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    width: 128px;
+    height: 48px;
+    border-radius: 12px;
+    background: #fe5a59;
+    border: none;
+    cursor: pointer;
+}
+.delete:hover{
+    background-color: #fa4639;
+    transition: 0.2s all;
+}
+.cancel:hover{
+    background-color: #fe5a59;
+    color: white;
+    border: none;
+    transition: 0.2s all;
+}
+.card:active{
+    opacity: 0.5;
+    transition: 5s all;
+    transition-delay: 5s;
+}
+.card.active .header{
+    transition: 1s;
+    transform: translateY(20px);
+    transition-delay: .3s;
+}
+.alert{
+    width: 300px;
+    height: 50px;
+    background-color: #c3f0d6;
+    color: #33e477;
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    border-left: 7px solid #33e477;
+    margin-top: 300%;
+}
+.alert p{
+    margin-right: 180px;
+}
+.alert button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: #33e477;
+}
+.alert button:hover{
+    background-color: #7df1c1;
+}
+@media only screen and (max-width: 420px){
+    *{
+        overflow: hidden;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-height: 100vh;
+        max-width: 400px;
+        background: #fafafa;
+    }
+}

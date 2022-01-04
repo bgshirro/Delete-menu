@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="btn">
+        <button id="open" onclick="openNav()">
+            <img src="trash.png"/>
+            Delete
+        </button>
+        
+    </div>
+    <div class="card" id="close">
+        <img src="danger.svg" alt="">
+        <p class="header">Do you want to<br>delete this item?</p>
+        <p class="warn">By deleting this item<br>you can't restore it later!</p>
+        <div class="button">
+            <button class="cancel" onclick="closeNav()">Cancel</button>
+            <button class="delete" id="delete" onclick="openAlert()">Delete</button>
+        </div>
+    </div>
+    <div class="alert" id="alert" onclick="closeAlert()">
+        <p>Success</p>
+        <button id="closeBtn">&times;</button>
+    </div>
+</body>
+</html>
